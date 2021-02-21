@@ -188,7 +188,66 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
+/* first carousal */
+.carousel-caption{
+    opacity:0;
+    transition:500ms ease-in-out;
+  }
+  .carousel-item:hover .carousel-caption{
+    opacity:1;
+  }
+  .carousel-inner1{position:relative;width:100%;overflow:hidden}
+  .carousel-inner1::after{display:block;clear:both;content:""}
+  
 
+  /* second carousal */
+  .carousel-item-prev,
+  .carousel-item-next,
+  .carousel-item.active {
+      display:flex;
+  }
+  
+  
+  /* control image height */
+  .card-img-top-250 {
+      max-height: 225px;
+      overflow:hidden;
+  }
+  
+  /* smoother transitions */
+  .carousel-inner>.carousel-item.next.left,
+  .carousel-inner>.carousel-item.prev.right
+  {
+      transition: all 1s ease;
+  }
+
+
+  /* third carousal */
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(25%);
+}
+
+.carousel-inner .carousel-item-left.active, 
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-25%);
+}
+  
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+  
+}
+
+
+  
 /* 
 div.transbox {
     margin: 30px;
@@ -198,12 +257,12 @@ div.transbox {
 } */
 
 ::selection {
-    background: #ff589e;
+    background: #4a7dca;
     color: #fff;
 }
 
 ::-moz-selection {
-    background: #ff589e;
+    background: #4a7dca;
     color: #fff;
 }
 
@@ -453,7 +512,7 @@ button.main-button {
     font-size: 13px;
     border-radius: 20px;
     padding: 12px 20px;
-    background-color: #8261ee;
+    background-color: #4a7dca;
     text-transform: uppercase;
     color: #fff;
     letter-spacing: 0.25px;
@@ -464,7 +523,7 @@ button.main-button {
 }
 
 button.main-button:hover {
-    background-color: #ff589e;
+    background-color: #3760c4;
 }
 
 
@@ -1282,7 +1341,7 @@ team
     display: block;
     font-weight: 400;
     font-size: 15px;
-    color: #ff589e;
+    color: #4a7dca;
     letter-spacing: 0.25px;
 }
 
@@ -1323,7 +1382,7 @@ pricing
 }
 
 .pricing-item.active .pricing-body .price-wrapper {
-    background-color: #ff589e;
+    background-color: #4a7dca;
 }
 
 .pricing-item.active .pricing-body .price-wrapper .currency {
@@ -1366,7 +1425,7 @@ pricing
     text-align: center;
     padding-top: 20px;
     padding-bottom: 13px;
-    background: #8261ee;
+    background: #3760c4;
     width: 80%;
     margin: auto;
     margin-bottom: 40px;
@@ -1462,7 +1521,7 @@ blog
 }
 
 .blog-post-thumb h3 a:hover {
-    color: #ff589e;
+    color: #3760c4;
 }
 
 .blog-post-thumb .text {
