@@ -806,7 +806,7 @@ welcome
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../images/banner-bg3.png);
+    background-image: url(../images/banner-bg3_3.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1022,7 +1022,7 @@ parallax & home seperator
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-image: url(../images/work-process-bg3.png);
+    background-image: url(../images/work-process-bg2.png);
     z-index: 2;
     top: -20%;
     left: -20%;
