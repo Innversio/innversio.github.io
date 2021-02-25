@@ -245,8 +245,55 @@ body {
   transform: translateX(0);
   
 }
+/* .carousel-control-next,.carousel-control-prev{
+    position:absolute;
+    top:0;
+    bottom:0;
+    z-index:1;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-align:center;
+    align-items:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    width:15%;
+    color:#fff;
+    text-align:center;
+    opacity:.5;
+    transition:opacity .15s ease
+}
+@media (prefers-reduced-motion:reduce){
+    .carousel-control-next,.carousel-control-prev{
+        transition:none
+    }
+}
+.carousel-control-next:focus,.carousel-control-next:hover,
+.carousel-control-prev:focus,.carousel-control-prev:hover{
+    color:#fff;
+    text-decoration:none;
+    outline:0;
+    opacity:.9
+}
+.carousel-control-prev{
+    left:0
+}
+.carousel-control-next{
+    right:0
+}
+.carousel-control-next-icon,.carousel-control-prev-icon{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background:no-repeat 50%/100% 100%
+} */
 
-
+#recipeCarousel .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+   }
+   
+ #recipeCarousel .carousel-control-next-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+   }
   
 /* 
 div.transbox {
@@ -1077,6 +1124,7 @@ parallax & home seperator
 }
 
 .mini .mini-content .mini-box {
+    height: 280px;
     display: block;
     background: #fff;
     padding: 20px;
@@ -1091,7 +1139,7 @@ parallax & home seperator
     text-align: center;
 }
 
-.mini .mini-content .mini-box:hover {
+.mini-box:hover {
     margin-top: -10px;
 }
 
@@ -1615,7 +1663,7 @@ footer
 
 footer {
     /* background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%); */
-    background-image: url(../images/banner-bg2.png);
+    background-image: url(../images/footer);
     padding-top: 30px;
 }
 
