@@ -1663,9 +1663,9 @@ footer
 
 footer {
     /* background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%); */
-    background-image: url(../images/last_bg.JPG);
+    background-image: url(../images/footer);
     padding-top: 30px;
-    background-size: 1900px 1000px;
+    /*background-size: 1900px 1000px; */
 }
 
 footer .social {
